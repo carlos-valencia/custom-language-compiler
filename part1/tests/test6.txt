@@ -1,0 +1,21 @@
+-- Program containing the comment, modified identifer and new literals
+
+// This is the new style comment
+
+function main b: integer, c: integer returns real;
+     a: real is 3.;
+     d: real is 5.7;
+     a_1: real is 4.e2;
+     ab_c_d: real is 4.3E+1;
+     ab1_cd2: real is 4.e-1;
+begin
+    if (a < 2) or (a > 0) and (b /= 0) or false then
+        7 - 2 / (9 rem 4);
+    else
+        if b >= 2 or b <= 6 and not(c = 1) and true then
+            a_1 + ab_c_d * (ab1_cd2 + 4);
+        else
+            a ** 2;
+        endif;
+    endif;
+end;

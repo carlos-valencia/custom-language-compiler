@@ -1,0 +1,13 @@
+-- Function with multiple mismatched when clauses
+-- Generates two errors for mismatch case types
+
+function custom1 returns integer;
+	a: integer is 8;
+begin
+	case a is
+		when 1 => true;
+		when 2 => 3.14;
+		when 3 => a;
+		others => 0;
+	endcase;
+end;

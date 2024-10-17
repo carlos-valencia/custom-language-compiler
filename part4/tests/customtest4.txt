@@ -1,0 +1,15 @@
+-- Function with multiple undefined and duplicate identifiers
+-- Generates 2 errors for each
+
+function custom4 returns integer;
+	a: integer is 10;
+	b: boolean is true;
+	a: real is 4.61;
+	b: integer is 2;
+begin
+	if b then
+		d + 2;
+	else
+		e * 5;
+	endif;
+end;

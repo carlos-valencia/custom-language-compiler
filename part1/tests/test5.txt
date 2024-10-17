@@ -1,0 +1,15 @@
+-- Program containing the new operators
+
+function main b: integer, c: integer returns integer;
+     a: real is 3;
+begin
+    if (a < 2) or (a > 0) and (b /= 0) then
+        7 - 2 / (9 rem 4);
+    else
+        if b >= 2 or b <= 6 and not(c = 1) then
+            7 + 2 * (2 + 4);
+        else
+            a ** 2;
+        endif;
+    endif;
+end;

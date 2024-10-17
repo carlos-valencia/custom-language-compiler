@@ -1,0 +1,13 @@
+// Testing 3+ variables
+
+function customTest1 returns integer;
+	var1: integer is 3;
+	var_2: boolean is false;
+	var3: real is 3.14;
+begin
+	if var_2 = true then
+		var1;
+	else
+		0;
+	endif;
+end;

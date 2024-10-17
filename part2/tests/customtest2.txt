@@ -1,0 +1,14 @@
+-- Testing 3 parameters and nested if
+
+function customtest2 par1: integer, par2: integer, par3: integer returns boolean;
+begin
+	if par1 > par2 then
+		true;
+	else
+		if par3 > par2 then
+			true;
+		else
+			false;
+		endif;
+	endif;
+end;

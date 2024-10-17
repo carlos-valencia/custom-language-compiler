@@ -1,0 +1,6 @@
+// This program should generate a syntax error in the function header
+
+function main a: integer, returns real;
+begin
+	a;
+end;

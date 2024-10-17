@@ -1,0 +1,21 @@
+-- Multiple errors throughout program
+-- Also tests lexical errors to ensure analyzer still works
+
+function customtest4 returns integer a;
+	var1: bool is 2 false;
+	__var2: integer is 2;
+	var 3: boolean is true and not 3 > 5 or not or false;
+	var4: boolean
+	
+//missing initialization of var 3
+
+	
+	
+begin
+	if var1 = true then
+		0;
+	else
+		1;
+		
+//missing endif
+end;

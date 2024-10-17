@@ -1,0 +1,16 @@
+-- Testing multiple cases
+
+function customtest3 var1: integer, var2: integer returns boolean;
+begin
+	case var1 is
+		when 1 => true;
+		when 2 => false;
+		when 3 =>
+			case var2 is
+				when 1 => false;
+				when 2 => true;
+				others => false;
+			endcase;
+		others => true;
+	endcase;
+end;

@@ -1,0 +1,26 @@
+--Sample Program in Target Language
+
+function someFunction param1: integer, param2: boolean returns integer;
+    var1: real is 3.14;
+    var2: integer is 5;
+    var3: integer is var2 + param1 * 3;
+    var4: boolean is (param2 or false) and not (param2 and false);
+begin
+    if var4 = true or (param2 /= true and var3 >= var2 * 3) then
+        if var3 > 19 and var3 < 31 or param1 + var2 <= 15 then
+            25;
+        else
+            case param1 is
+                when 11 => 100;
+                when 12 => 200;
+                others => param1;
+            endcase;
+        endif;
+    else
+        reduce +
+            var2 + 2 ** 3;
+            9 * 19 rem 4;
+            5 - 8 / 4;
+        endreduce;
+    endif;
+end;

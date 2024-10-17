@@ -1,0 +1,15 @@
+-- Function with multiple illegal narrowings
+-- Generates 2 errors for narrowing on init
+-- an error for narrowing on return, and a mismatch error
+
+function custom3 returns integer;
+	a: integer is 3 + 4.3;
+	b: boolean is true;
+	c: integer is 2.1 * 2;
+begin
+	if b then
+		a + c;
+	else
+		4.12;
+	endif;
+end;

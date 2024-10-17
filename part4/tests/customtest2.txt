@@ -1,0 +1,18 @@
+-- Function with nested if
+-- Generates an error for if expression not being boolean (MISMATCH)
+-- and needing numeric type for comparison with b
+
+function custom2 returns integer;
+	a: integer is 10;
+	b: integer is 2;
+begin
+	if a = 10 then
+		if b = true then
+			a * b;
+		else
+			a * 3;
+		endif;
+	else
+		20;
+	endif;
+end;
